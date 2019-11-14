@@ -35,24 +35,28 @@
         <fieldset class="person">
           <h2 class="person__title">Представьтесь:</h2>
 
-          <label class="person__label" for="name">Имя*:</label>
-          <input class="person__field" type="text" placeholder="Петр" name="name" id="name">
+          <div class="person__wrap">
+            <label class="person__label" for="name">Имя*:</label>
+            <input class="person__field" type="text" placeholder="Петр" name="name" id="name">
 
-          <label class="person__label" for="surname">Фамилия:*</label>
-          <input class="person__field" type="text" placeholder="Иванов" name="surname" id="surname">
+            <label class="person__label" for="surname">Фамилия:*</label>
+            <input class="person__field" type="text" placeholder="Иванов" name="surname" id="surname">
 
-          <label class="person__label" for="">Отчество</label>
-          <input class="person__field" type="text" placeholder="Александрович" name="fathername" id="surname">
+            <label class="person__label" for="">Отчество</label>
+            <input class="person__field" type="text" placeholder="Александрович" name="fathername" id="surname">
+          </div>
         </fieldset>
 
         <fieldset class="contacts">
           <h2 class="contacts__title">Контактная информация:</h2>
 
-          <label class="contacts__label" for="tel">Контактный телефон*:</label>
-          <input class="contacts__field contacts__field--tel" type="tel" placeholder="Введите телефон" name="tel" id="tel">
+          <div class="contacts__wrap">
+            <label class="contacts__label" for="tel">Контактный телефон*:</label>
+            <input class="contacts__field contacts__field--tel" type="tel" placeholder="Введите телефон" name="tel" id="tel">
 
-          <label class="contacts__label" for="email">Электронная почта*:</label>
-          <input class="contacts__field contacts__field--email" type="email" placeholder="Введите e-mail">
+            <label class="contacts__label" for="email">Электронная почта*:</label>
+            <input class="contacts__field contacts__field--email" type="email" placeholder="Введите e-mail">
+          </div>
         </fieldset>
 
         <fieldset class="evaluation">
@@ -97,8 +101,36 @@
             </div>
           </div>
         </fieldset>
+
+        <fieldset class="emotions">
+          <h2 class="emotions__title">Опишите свои эмоции:</h2>
+
+          <div class="emotions__wrap">
+            <textarea class="emotions__input" name="emotions" placeholder="Опишите подробно все свои восторги" required></textarea>
+          </div>
+        </fieldset>
+        <button class="button-send" type="submit"></button>
       </form>
     </main>
+
+    <footer>
+
+      <a class="page-footer__logo">#visitsedona</a>
+
+      <div class="social">
+        <ul class="social__list">
+          <li><a class="social__item social__item--twitter" href="#" title="Twitter">Twitter</a></li>
+          <li><a class="social__item social__item--facebook" href="#" title="Facebook">Facebook</a></li>
+          <li><a class="social__item social__item--youtube" href="#" title="Youtube">Youtube</a></li>
+        </ul>
+      </div>
+
+      <a class="developer" href="https://htmlacademy.ru/">
+        <p class="developer__description">Разработано</p>
+      </a>
+
+    </footer>
+
   </body>
 
 </html>
