@@ -1,0 +1,11 @@
+@mixin container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 320px;
+}
+
+@mixin list-style-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
