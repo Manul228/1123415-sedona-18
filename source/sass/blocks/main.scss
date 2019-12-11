@@ -1,3 +1,40 @@
-.advantages__title {
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 211px;
+}
+
+.intro__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__content--index {
+  width: 255px;
+  height: 149px;
+}
+
+.intro__content--photo {
+  width: 269px;
+  height: 112px;
+}
+
+.intro__title {
   font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.intro__description {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
 }

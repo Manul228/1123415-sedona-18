@@ -1,0 +1,42 @@
+.features {
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.features__content {
+  width: 210px;
+  height: 92px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.features__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  margin: 0;
+  padding: 0;
+}
+
+.features__description {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
