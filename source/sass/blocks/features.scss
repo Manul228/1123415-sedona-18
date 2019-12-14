@@ -1,16 +1,10 @@
 .features {
   height: 420px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-column-center;
 }
 
 .features__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-column-center;
 }
 
 .features__content {

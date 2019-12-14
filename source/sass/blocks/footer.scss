@@ -1,8 +1,5 @@
 .page-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-column-center;
 }
 
 .page-footer__logo {

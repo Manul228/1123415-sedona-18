@@ -1,16 +1,10 @@
 .intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-column-center;
   height: 211px;
 }
 
 .intro__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-column-center;
 }
 
 .intro__content--index {
@@ -26,15 +20,11 @@
 .intro__title {
   font-size: 18px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.44;
-  letter-spacing: normal;
   text-align: center;
 }
 
 .intro__description {
   font-size: 14px;
-  font-weight: normal;
   text-align: center;
 }
