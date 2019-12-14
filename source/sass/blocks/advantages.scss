@@ -1,29 +1,29 @@
 .advantages__content {
   &--blue {
-    color: white;
     background-color: $light-grey-blue;
+    color: white;
   }
 
   &--grey {
-    color: black;
     background-color: $light-grey;
+    color: black;
   }
 }
 
 .advantages__item {
-  width: 320px;
-  height: 211px;
+  align-items: center;
   display: flex;
   flex-direction: column;
+  height: 211px;
   justify-content: center;
-  align-items: center;
+  width: 320px;
 }
 
 .advantages__title {
+  color: inherit;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
-  color: inherit;
 }
 
 .advantages__number {
@@ -31,13 +31,13 @@
 }
 
 .advantages__description {
+  color: inherit;
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
-  color: inherit;
 }
 
 .advantages__img {
-  width: 320px;
   height: 260px;
+  width: 320px;
 }
