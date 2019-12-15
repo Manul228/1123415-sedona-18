@@ -1,0 +1,30 @@
+.intro {
+  @include flex-column-center;
+  height: 211px;
+}
+
+.intro__content {
+  @include flex-column-center;
+}
+
+.intro__content--index {
+  width: 255px;
+  height: 149px;
+}
+
+.intro__content--photo {
+  width: 269px;
+  height: 112px;
+}
+
+.intro__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  text-align: center;
+}
+
+.intro__description {
+  font-size: 14px;
+  text-align: center;
+}
