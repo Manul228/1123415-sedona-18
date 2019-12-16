@@ -23,3 +23,10 @@
   line-height: 1.86;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

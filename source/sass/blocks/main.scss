@@ -1,6 +1,7 @@
 .intro {
-  @include flex-column-center;
   height: 211px;
+
+  @include flex-column-center;
 }
 
 .intro__content {
@@ -8,13 +9,13 @@
 }
 
 .intro__content--index {
-  width: 255px;
   height: 149px;
+  width: 255px;
 }
 
 .intro__content--photo {
-  width: 269px;
   height: 112px;
+  width: 269px;
 }
 
 .intro__title {
@@ -27,4 +28,14 @@
 .intro__description {
   font-size: 14px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__content--index {
+    height: 100px;
+    width: 490px;
+  }
+}
+
+@media (min-width: $desktop-width) {
 }

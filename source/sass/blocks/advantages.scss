@@ -1,19 +1,25 @@
 .advantages__content {
   @include flex-column-center;
+}
 
-  &--blue {
+
+.advantages__item {
+  @include flex-column-center;
+
+  &--first {
     background-color: $light-grey-blue;
     color: white;
   }
 
-  &--grey {
+  &--second {
+    background-color: $light-grey-blue;
+    color: white;
+  }
+
+  &--other {
     background-color: $light-grey;
     color: black;
   }
-}
-
-.advantages__item {
-  @include flex-column-center;
 }
 
 .advantages__title {
