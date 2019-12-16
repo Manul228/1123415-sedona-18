@@ -13,3 +13,30 @@
   line-height: 1.71;
   text-transform: none;
 }
+
+.gallery__item {
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    flex-wrap: wrap;
+  }
+
+  .gallery__item:nth-child(1) {
+    width: 648px;
+  }
+  .gallery__footer {
+    height: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__item:nth-child(1) {
+    width: $desktop-width;
+  }
+}
