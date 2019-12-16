@@ -1,6 +1,7 @@
 .page-header {
   display: flex;
   flex-direction: column;
+
   flex-wrap: wrap;
   margin: 0 auto;
 }
@@ -10,80 +11,109 @@
 }
 
 .main-nav__close {
-  position: absolute;
-  width: 23px;
   height: 22px;
+  position: absolute;
   right: 20px;
   top: 17px;
+  width: 23px;
 }
 
 .main-nav__list {
   @include list-style-reset;
 }
 
-.main-nav__item {
-  background-color: $light-grey-blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .main-nav__item a {
   color: white;
   font-size: 18px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 2.22;
-  letter-spacing: normal;
-  text-decoration: none;
   text-align: center;
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .main-nav__item a {
+    background-color: white;
+    color: black;
+  }
+
+  .main-header__top {
+    background: none;
+    position: absolute;
+  }
+
+  .main-header__logo-picture {
+    height: auto;
+    width: 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__title {
+    height: 360px;
+    width: 461px;
+  }
+}
+
+.main-nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $light-grey-blue;
 }
 
 .page-header__top {
-  width: 100%;
   background: white;
   height: 55px;
   position: relative;
+  width: 100%;
 }
 
 .page-header__logo {
-  position: absolute;
   left: 35%;
+  position: absolute;
   top: 0;
 }
 
 .page-header__logo-image {
-  width: 102px;
   height: auto;
+  width: 102px;
 }
 
 .page-header__intro {
-  min-height: 280px;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 280px;
+  width: 100%;
 }
 
 .page-header__title {
-  width: 461px;
   height: 80px;
+  width: 461px;
 }
 
 .burger {
-  width: 23px;
-  height: 23px;
-  border: 0;
   background: url("../../img/icon-menu.svg");
-  padding: 0;
-  cursor: pointer;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+  cursor: pointer;
+  height: 23px;
+  padding: 0;
   position: absolute;
   right: 20px;
   top: 12px;
+  width: 23px;
 }

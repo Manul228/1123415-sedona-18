@@ -23,5 +23,5 @@
   "tab-size": true,
   "unitless-zero": true,
   "vendor-prefix-align": true,
-  "sort-order": [["$variable"], ["display"], ["..."], ["$include"]]
+  "sort-order": [["$variable"], ["display", "flex-direction", "justify-content", "align-items"], ["..."],["$media"] ,["$include"]]
 }
