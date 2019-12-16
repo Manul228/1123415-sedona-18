@@ -2,7 +2,6 @@
   @include flex-column-center;
 }
 
-
 .advantages__item {
   @include flex-column-center;
 
@@ -58,7 +57,4 @@
       }
     }
   }
-}
-
-@media (min-width: $desktop-width) {
 }
