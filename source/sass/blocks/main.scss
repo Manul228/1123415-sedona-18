@@ -30,9 +30,36 @@
   text-align: center;
 }
 
+.proposal {
+  @include flex-column-center;
+}
+
+.proposal__title {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.24;
+}
+
+.proposal__text {
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+}
+
+.map {
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .intro__content {
     height: 100px;
     width: 490px;
+  }
+
+  .map {
+    height: 350px;
   }
 }
