@@ -13,7 +13,7 @@
       <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button"></button>
 
-        <ul class="main-nav__list">
+        <ul class="main-nav__list style-reset">
           <li class="main-nav__item"><a href="index.html">Главная</a></li>
           <li class="main-nav__item main-nav__item--current"><a>Фото и видео</a></li>
           <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
@@ -34,82 +34,111 @@
     </header>
 
     <main>
-      <section class="intro intro--photo">
-        <div class="intro__content intro__content--photo">
-          <h1 class="intro__title intro__title--photo">Фото и видео</h1>
-          <p class="intro__description intro__description--photo"> Не можете решиться на путешествие из-за курса?
-            Фотографии помогут вам забыть о политике и экономике.</p>
-        </div>
-      </section>
+      <div class="content-wrapper">
+        <section class="intro intro--photo">
+          <div class="intro__content intro__content--photo">
+            <h1 class="intro__title intro__title--photo">Фото и видео</h1>
+            <p class="intro__description intro__description--photo"> Не можете решиться на путешествие из-за курса?
+              Фотографии помогут вам забыть о политике и экономике.</p>
+          </div>
+        </section>
 
-      <section class="gallery">
-        <div class="gallery__item">
-          <a class="gallery__link" href="#">
-            <img width="280" height="280" src="https://via.placeholder.com/280x280" alt="Фото дороги">
-          </a>
-          <div class="gallery__footer">
-            <div class=" gallery__sign-block">
-              <h2 class="gallery__title ">Неродные просторы</h2>
-              <p class="gallery__text">Автор фото: Борис</p>
+        <section class="gallery">
+          <div class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img width="280" height="280" src="https://via.placeholder.com/280x280" alt="Фото дороги">
+            </a>
+            <div class="gallery__footer">
+              <div class=" gallery__sign-block">
+                <h2 class="gallery__title ">Неродные просторы</h2>
+                <p class="gallery__text">Автор фото: Борис</p>
+              </div>
+            </div>
+            <div class="gallery__likes">
+              <button class="gallery__like-button" type="submit">
+              </button>
+              <span class="gallery__count">1350</span>
             </div>
           </div>
-          <div class="gallery__likes">
-            <button class="gallery__like-button" type="submit">
-            </button>
-            <span class="gallery__count">1350</span>
+          <div class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img width="280" height="280" src="https://via.placeholder.com/280x280" alt="Фото дороги">
+            </a>
+            <div class="gallery__footer">
+              <div class=" gallery__sign-block">
+                <h2 class="gallery__title ">Местная растительность</h2>
+                <p class="gallery__text">Автор фото: Сергей</p>
+              </div>
+            </div>
+            <div class="gallery__likes">
+              <button class="gallery__like-button" type="submit">
+              </button>
+              <span class="gallery__count">143</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery__item gallery">
-          <a class="gallery_link" href="#">
-            <img class="gallery__source" width="280" height="280" src="https://via.placeholder.com/280x280"
-              alt="Фото кактуса">
-          </a>
-        </div>
-        <div class="gallery__info">
-          <h2 class="gallery__title">Местная растительность</h2>
-          <p class="gallery__text">Автор фото: Сергей</p>
-        </div>
-        <div class="gallery__likes">
-          <button class="gallery__like-button" type="submit"></button>
-          <span class="gallery__count">143</span>
-        </div>
-        <div class="gallery__item gallery">
-          <a class="gallery__link" href="#">
-            <img class="gallery__source" width="280" height="280" src=" https://via.placeholder.com/280x280 "
-              alt="Фото дороги в лесу">
-          </a>
-        </div>
-        <div class="gallery__sign-block">
-          <h2 class="gallery__title">Дорога на север</h2>
-          <p class="gallery__text">Автор фото: Петр</p>
-        </div>
-        <div class="gallery__likes">
-          <button class="gallery__like-button" type="submit"></button>
-          <span class="gallery__count">96</span>
-        </div>
-        <div class="gallery__item gallery">
-          <a class="gallery__link" href="#">
-            <img class="gallery__source" width="280" height="280" src="https://via.placeholder.com/280x280"
-              alt="Фото какой-то горы">
-          </a>
-        </div>
-        <div class="gallery__sign-block">
-          <h2 class="gallery__title">Мост дьявола</h2>
-          <p class="gallery__text">Автор фото: Антон</p>
-        </div>
-        <div class="gallery__likes">
-          <button class="gallery__like-button" type="submit"></button>
-          <span class="gallery__count">254</span>
-        </div>
-      </section>
+          <div class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img width="280" height="280" src="https://via.placeholder.com/280x280" alt="Фото дороги">
+            </a>
+            <div class="gallery__footer">
+              <div class=" gallery__sign-block">
+                <h2 class="gallery__title ">Дорога на север</h2>
+                <p class="gallery__text">Автор фото: Петр</p>
+              </div>
+            </div>
+            <div class="gallery__likes">
+              <button class="gallery__like-button" type="submit">
+              </button>
+              <span class="gallery__count">96</span>
+            </div>
+          </div>
+          <div class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img width="280" height="280" src="https://via.placeholder.com/280x280" alt="Фото дороги">
+            </a>
+            <div class="gallery__footer">
+              <div class=" gallery__sign-block">
+                <h2 class="gallery__title ">Мост дьявола</h2>
+                <p class="gallery__text">Автор фото: Антон</p>
+              </div>
+            </div>
+            <div class="gallery__likes">
+              <button class="gallery__like-button" type="submit">
+              </button>
+              <span class="gallery__count">254</span>
+            </div>
+          </div>
+
+          <div class="gallery-video__top">
+            <h2 class="gallery-video__title">Все еще сомневаетесь?</h2>
+            <p class="gallery-video__text">Смотрите видеопрезентацию и
+              скорее за билетами, пока они не
+              подорожали в очередной раз!</p>
+          </div>
+
+          <div class="gallery-video__player">
+            <div class="gallery-video__image">
+            </div>
+            <div class="gallery-video__controls">
+              <div class="gallery-video__bar">
+              </div>
+              <div class="gallery-video__control-buttons">
+                <button class="gallery-video__button gallery-video__button--repeat"></button>
+                <button class="gallery-video__button gallery-video__button--subtitle"></button>
+                <button class="gallery-video__button gallery-video__button--full-screen"></button>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
     </main>
 
     <footer class="page-footer">
-
       <a class="page-footer__logo">#visitsedona</a>
 
       <div class="social">
-        <ul class="social__list">
+        <ul class="social__list style-reset">
           <li><a class="social__item social__item--twitter" href="#" title="Twitter">Twitter</a></li>
           <li><a class="social__item social__item--facebook" href="#" title="Facebook">Facebook</a></li>
           <li><a class="social__item social__item--youtube" href="#" title="Youtube">Youtube</a></li>
@@ -119,7 +148,6 @@
       <a href="#" class="page-footer__copyright" href="https://htmlacademy.ru/">
         <p class="page-footer__copyright-text">Разработано</p>
       </a>
-
     </footer>
   </div>
 </body>
