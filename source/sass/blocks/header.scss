@@ -18,10 +18,6 @@
   width: 23px;
 }
 
-.main-nav__list {
-  @include list-style-reset;
-}
-
 .main-nav__item a {
   color: white;
   font-size: 18px;
