@@ -1,32 +1,42 @@
 .intro {
-  height: 211px;
+  display: flex;
 
-  @include flex-column-center;
+  height: 202px;
+
+  margin: 0;
+  padding: 0;
 }
 
 .intro__content {
-  @include flex-column-center;
+  margin: 0 auto;
 }
 
 .intro__content--index {
-  height: 149px;
   width: 255px;
+  height: 149px;
 }
 
 .intro__content--photo {
-  height: 112px;
   width: 269px;
+  height: 112px;
 }
 
 .intro__title {
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
+  margin: 0;
+  padding: 0;
+  padding-top: 43px;
   text-align: center;
 }
 
 .intro__description {
   font-size: 14px;
+  line-height: 1.86;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
   text-align: center;
 }
 
@@ -63,16 +73,17 @@
 }
 
 .map {
+  width: 100%;
   height: 250px;
+
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .intro__content {
-    height: 100px;
     width: 490px;
+    height: 100px;
   }
 
   .map {

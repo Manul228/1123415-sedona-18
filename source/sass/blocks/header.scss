@@ -109,16 +109,15 @@
   justify-content: center;
   align-items: center;
 
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 280px;
+  background: url("../../img/bg-intro-triangle-mobile.svg") no-repeat bottom,
+  url("../../img/bg-back-mobile@1x.jpg") no-repeat;
+  min-height: 389px;
   width: 100%;
 }
 
 .page-header__title {
-  height: 80px;
-  width: 461px;
+  height: 214px;
+  width: 281px;
 }
 
 .main-nav__open {
