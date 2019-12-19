@@ -1,33 +1,35 @@
 .features {
-  height: 420px;
-
-  @include flex-column-center;
+  display: flex;
+  flex-direction: column;
+  height: 415px;
+  justify-content: flex-start;
 }
 
 .features__item {
-  @include flex-column-center;
+  margin: 0;
+  margin-left: 27px;
+  margin-top: 35px;
+  padding: 0;
 }
 
 .features__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
-  height: 92px;
+  margin: 0;
+  padding: 0;
   width: 210px;
 }
 
 .features__title {
   font-size: 18px;
   font-weight: bold;
-  line-height: 1.44;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
+  padding-bottom: 10px;
 }
 
 .features__description {
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.44;
   margin: 0;
   padding: 0;
   text-align: left;

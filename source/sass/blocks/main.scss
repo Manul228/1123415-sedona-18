@@ -1,8 +1,6 @@
 .intro {
   display: flex;
-
-  height: 202px;
-
+  height: 200px;
   margin: 0;
   padding: 0;
 }
@@ -12,31 +10,31 @@
 }
 
 .intro__content--index {
-  width: 255px;
   height: 149px;
+  width: 255px;
 }
 
 .intro__content--photo {
-  width: 269px;
   height: 112px;
+  width: 269px;
 }
 
 .intro__title {
   font-size: 18px;
   font-weight: bold;
-  line-height: 1.44;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
-  padding-top: 43px;
+  padding-top: 38px;
   text-align: center;
 }
 
 .intro__description {
   font-size: 14px;
-  line-height: 1.86;
+  line-height: 1.9;
   margin: 0;
   padding: 0;
-  padding-top: 30px;
+  padding-top: 25px;
   text-align: center;
 }
 
@@ -73,17 +71,16 @@
 }
 
 .map {
-  width: 100%;
   height: 250px;
-
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .intro__content {
-    width: 490px;
     height: 100px;
+    width: 490px;
   }
 
   .map {
