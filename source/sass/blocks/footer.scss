@@ -6,6 +6,7 @@
   font-size: 21px;
   font-weight: bold;
   line-height: 1.24;
+  margin-top: 35px;
   text-align: center;
 }
 
@@ -20,14 +21,78 @@
   text-align: center;
 }
 
+.social__list {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  margin-top: 37px;
+  padding: 0;
+  text-align: center;
+}
+
+.social__list li {
+  display: block;
+
+  margin: 0 auto;
+}
+
+.social__item {
+  overflow: hidden;
+  text-indent: -9999px;
+  white-space: nowrap;
+}
+
+.social__item::before {
+  float: left;
+  text-indent: 0;
+}
+
+.social__item {
+  margin-right: 6px;
+}
+
+.social__item--twitter::before {
+  width: 46px;
+  height: 48px;
+
+  background: $light-grey-blue url("../../img/icon-twitter.svg") no-repeat center;
+  content: "";
+}
+
+.social__item--facebook::before {
+  width: 46px;
+  height: 48px;
+
+  background: $light-grey-blue url("../../img/icon-facebook.svg") no-repeat center;
+  content: "";
+}
+
+.social__item--youtube::before {
+  width: 46px;
+  height: 48px;
+
+  background: $light-grey-blue url("../../img/icon-youtube.svg") no-repeat center;
+  content: "";
+}
+
+.social__item:hover::before {
+  background-color: $blue;
+}
+
+
+
+
+
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
 
+    width: 648px;
+
     margin-left: auto;
     margin-right: auto;
-    width: 648px;
   }
 }
 

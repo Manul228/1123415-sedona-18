@@ -1,6 +1,8 @@
 .intro {
   display: flex;
+
   height: 200px;
+
   margin: 0;
   padding: 0;
 }
@@ -10,13 +12,13 @@
 }
 
 .intro__content--index {
-  height: 149px;
   width: 255px;
+  height: 149px;
 }
 
 .intro__content--photo {
-  height: 112px;
   width: 269px;
+  height: 112px;
 }
 
 .intro__title {
@@ -38,22 +40,6 @@
   text-align: center;
 }
 
-.proposal {
-  @include flex-column-center;
-}
-
-.proposal__title {
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 1.24;
-}
-
-.proposal__text {
-  font-size: 14px;
-  line-height: 1.71;
-  text-align: center;
-}
-
 .gallery-video__top {
   @include flex-column-center;
 }
@@ -71,16 +57,17 @@
 }
 
 .map {
+  width: 100%;
   height: 250px;
+
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .intro__content {
-    height: 100px;
     width: 490px;
+    height: 100px;
   }
 
   .map {

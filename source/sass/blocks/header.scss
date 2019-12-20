@@ -1,6 +1,7 @@
 .page-header {
   display: flex;
   flex-direction: column;
+
   flex-wrap: wrap;
   margin: 0 auto;
 }
@@ -10,18 +11,20 @@
 }
 
 .main-nav__close {
+  width: 23px;
   height: 22px;
+
   position: absolute;
   right: 20px;
   top: 17px;
-  width: 23px;
 }
 
 .main-nav__item a {
+  display: block;
+
   background-color: $light-grey-blue;
   box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2);
   color: white;
-  display: block;
   font-size: 18px;
   font-weight: bold;
   line-height: 2.26;
@@ -42,6 +45,57 @@
   }
 }
 
+.page-header__top {
+  width: 100%;
+  height: 57px;
+
+  background: white;
+  position: relative;
+}
+
+.page-header__logo {
+  left: 34%;
+  position: absolute;
+  top: 0;
+}
+
+.page-header__logo-image {
+  width: 102px;
+  height: auto;
+}
+
+.page-header__intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  background: url("../../img/bg-intro-triangle-mobile.svg") no-repeat bottom,
+  url("../../img/bg-back-mobile@1x.jpg") no-repeat left -224px top 0;
+  min-height: 389px;
+}
+
+.page-header__title {
+  width: 281px;
+  height: 214px;
+}
+
+.main-nav__open {
+  width: 23px;
+  height: 23px;
+
+  background: url("../../img/icon-menu.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  right: 20px;
+  top: 13px;
+}
+
 @media (max-width: $tablet-width - 1px) {
   .main-nav--closed .main-nav__item {
     display: none;
@@ -56,9 +110,9 @@
   }
 
   .main-nav__item {
-    align-items: center;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .main-nav__item a {
@@ -72,61 +126,19 @@
   }
 
   .main-header__logo-picture {
-    height: auto;
     width: 100px;
+    height: auto;
+  }
+
+  .main-nav__open,
+  .main-nav__close {
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-header__title {
-    height: 360px;
     width: 461px;
+    height: 360px;
   }
-}
-
-.page-header__top {
-  background: white;
-  height: 57px;
-  position: relative;
-  width: 100%;
-}
-
-.page-header__logo {
-  left: 34%;
-  position: absolute;
-  top: 0;
-}
-
-.page-header__logo-image {
-  height: auto;
-  width: 102px;
-}
-
-.page-header__intro {
-  align-items: center;
-  background: url("../../img/bg-intro-triangle-mobile.svg") no-repeat bottom,
-  url("../../img/bg-back-mobile@1x.jpg") no-repeat left -224px top 0;
-  display: flex;
-  justify-content: center;
-  min-height: 389px;
-  width: 100%;
-}
-
-.page-header__title {
-  height: 214px;
-  width: 281px;
-}
-
-.main-nav__open {
-  background: url("../../img/icon-menu.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 0;
-  cursor: pointer;
-  height: 23px;
-  padding: 0;
-  position: absolute;
-  right: 20px;
-  top: 13px;
-  width: 23px;
 }
