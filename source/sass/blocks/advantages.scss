@@ -52,6 +52,10 @@
   text-align: center;
 }
 
+.advantages__title br {
+  display: none;
+}
+
 .advantages__number {
   color: inherit;
   font-size: 14px;
@@ -132,5 +136,33 @@
     background: url("../../img/main-city-tablet@1x.jpg") no-repeat;
     height: 256px;
     width: 512px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__img {
+    background: url("../../img/main-city-desktop@1x.jpg") no-repeat;
+    height: 256px;
+    width: 800px;
+  }
+
+  .advantages__title br {
+    display: inline;
+  }
+
+  .advantages__item {
+    &--first {
+      .advantages__content {
+        margin-top: 53px;
+        width: 265px;
+      }
+    }
+
+    &--second {
+      .advantages__content {
+        margin-top: 8px;
+        width: 220px;
+      }
+    }
   }
 }

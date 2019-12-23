@@ -115,7 +115,23 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     flex-direction: row;
-    justify-content: space-between;
-    width: 648px;
+    justify-content: flex-start;
+    width: $desktop-width;
+  }
+
+  .page-footer__logo {
+    margin-left: 119px;
+    margin-top: 47px;
+  }
+
+  .social {
+    margin-left: 270px;
+    margin-top: 48px;
+  }
+
+  .page-footer__copyright {
+    margin-left: 275px;
+    margin-top: 45px;
+    letter-spacing: 0.5px;
   }
 }

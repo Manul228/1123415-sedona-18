@@ -8,8 +8,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: $desktop-width + 80px;
   }
+
 }
 
 @mixin list-style-reset {
@@ -19,8 +22,8 @@
 }
 
 @mixin flex-column-center {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
