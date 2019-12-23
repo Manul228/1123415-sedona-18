@@ -17,6 +17,10 @@
   text-align: center;
 }
 
+.proposal__text br {
+  display: none;
+}
+
 .proposal__button {
   display: flex;
   justify-content: center;
@@ -42,4 +46,28 @@
   height: 350px;
 
   margin-top: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .proposal__title {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+  .proposal__text {
+    margin-top: 27px;
+  }
+
+  .proposal__text br {
+    display: inline;
+  }
+
+  .proposal__button {
+    width: 458px;
+    margin-top: 42px;
+  }
+
+  .map {
+    margin-top: 58px;
+  }
 }

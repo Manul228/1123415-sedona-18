@@ -93,10 +93,22 @@
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .page-footer {
     flex-direction: row;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    width: 648px;
+    justify-content: flex-start;
+  }
+
+  .page-footer__logo {
+    margin-left: 60px;
+    margin-top: 33px;
+  }
+
+  .social {
+    margin-left: 112px;
+  }
+
+  .page-footer__copyright {
+    margin-left: 120px;
+    margin-top: 33px;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -104,5 +116,6 @@
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
+    width: 648px;
   }
 }
