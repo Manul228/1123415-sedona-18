@@ -26,6 +26,8 @@
     background-color: $light-grey;
     color: black;
     height: 503px;
+    padding-bottom: 25px;
+    padding-top: 28px;
     width: 320px;
   }
 }
@@ -34,6 +36,10 @@
   margin: 0 auto;
   text-align: center;
   width: 280px;
+}
+
+.advantages__content br {
+  display: none;
 }
 
 .advantages__title {
@@ -71,11 +77,6 @@
   width: 320px;
 }
 
-.advantages__item--other {
-  padding-bottom: 25px;
-  padding-top: 28px;
-}
-
 @media (min-width: $tablet-width) {
   .advantages__item {
     align-items: stretch;
@@ -86,11 +87,40 @@
     justify-content: space-between;
     width: 100%;
 
+    &--first {
+      margin-top: 7px;
+      padding-top: 0;
+
+      .advantages__content {
+        margin-top: 45px;
+      }
+    }
+
     &--second {
+      padding-top: 45px;
+
       .advantages__content {
         order: 2;
       }
     }
+
+    &--other {
+      padding-top: 45px;
+    }
+  }
+
+  .advantages__content br {
+    display: inline;
+  }
+
+  .advantages__title {
+    font-size: 21px;
+    line-height: 1.24;
+  }
+
+  .advantages__description {
+    line-height: 1.5;
+    margin-top: 23px;
   }
 
   .advantages__content {
@@ -99,6 +129,7 @@
   }
 
   .advantages__img {
+    background: url("../../img/main-city-tablet@1x.jpg") no-repeat;
     height: 256px;
     width: 512px;
   }

@@ -1,8 +1,6 @@
 .intro {
   display: flex;
-
   height: 200px;
-
   margin: 0;
   padding: 0;
 }
@@ -12,13 +10,13 @@
 }
 
 .intro__content--index {
-  width: 255px;
   height: 149px;
+  width: 255px;
 }
 
 .intro__content--photo {
-  width: 269px;
   height: 112px;
+  width: 269px;
 }
 
 .intro__title {
@@ -57,17 +55,22 @@
 }
 
 .map {
-  width: 100%;
   height: 250px;
-
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .intro__content {
-    width: 490px;
     height: 100px;
+    width: 490px;
+  }
+
+  .intro__title {
+    font-size: 21px;
+    line-height: 1.35;
+    padding-top: 48px;
   }
 
   .map {
