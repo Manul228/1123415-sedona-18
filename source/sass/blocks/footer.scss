@@ -94,20 +94,22 @@
   .page-footer {
     flex-direction: row;
     justify-content: flex-start;
+    height: 120px;
   }
 
   .page-footer__logo {
     margin-left: 60px;
-    margin-top: 33px;
+    margin-top: 0;
   }
 
   .social {
     margin-left: 112px;
+    margin-top: 0;
   }
 
   .page-footer__copyright {
     margin-left: 120px;
-    margin-top: 33px;
+    margin-top: 0;
     letter-spacing: 0.5px;
   }
 }
@@ -117,21 +119,22 @@
     flex-direction: row;
     justify-content: flex-start;
     width: $desktop-width;
+    height: 120px;
   }
 
   .page-footer__logo {
     margin-left: 119px;
-    margin-top: 47px;
+    margin-top: 0;
   }
 
   .social {
     margin-left: 270px;
-    margin-top: 48px;
+    margin-top: 0;
   }
 
   .page-footer__copyright {
     margin-left: 275px;
-    margin-top: 45px;
+    margin-top: 0;
     letter-spacing: 0.5px;
   }
 }

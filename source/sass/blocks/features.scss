@@ -35,6 +35,10 @@
   text-align: left;
 }
 
+.features__description br {
+  display: none;
+}
+
 .features__item--housing::before {
   background: url("../../img/icon-house.svg") no-repeat center;
   background-size: contain;
@@ -102,6 +106,10 @@
     text-align: center;
   }
 
+  .features__description br {
+    display: inline;
+  }
+
   .features__item--souvenirs {
     order: 1;
   }
@@ -132,4 +140,12 @@
   .features {
     flex-direction: row;
   }
+
+  .features__content {
+    margin-bottom: 95px;
+    min-width: 290px;
+    height: 80px;
+  }
+
+
 }

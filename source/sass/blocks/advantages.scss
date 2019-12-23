@@ -164,5 +164,12 @@
         width: 220px;
       }
     }
+
+    &--other {
+      .advantages__content {
+        margin-top: 0;
+        width: 285px;
+      }
+    }
   }
 }
