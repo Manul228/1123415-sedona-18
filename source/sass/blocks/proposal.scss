@@ -64,10 +64,23 @@
 
   .proposal__button {
     width: 458px;
+
+    margin-top: 42px;
+  }
+
+  .map {
+    margin-top: 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .proposal__button {
+    width: 458px;
+
     margin-top: 45px;
   }
 
   .map {
-    margin-top: 67px;
+    margin-top: 65px;
   }
 }
