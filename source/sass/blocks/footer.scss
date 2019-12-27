@@ -24,6 +24,7 @@
 .social__list {
   display: flex;
   justify-content: center;
+
   margin: 0;
   padding: 0;
 }
@@ -45,24 +46,27 @@
 }
 
 .social__item--twitter::before {
+  width: 46px;
+  height: 48px;
+
   background: $light-grey-blue url("../../img/icon-twitter.svg") no-repeat center;
   content: "";
-  height: 48px;
-  width: 46px;
 }
 
 .social__item--facebook::before {
+  width: 46px;
+  height: 48px;
+
   background: $light-grey-blue url("../../img/icon-facebook.svg") no-repeat center;
   content: "";
-  height: 48px;
-  width: 46px;
 }
 
 .social__item--youtube::before {
+  width: 46px;
+  height: 48px;
+
   background: $light-grey-blue url("../../img/icon-youtube.svg") no-repeat center;
   content: "";
-  height: 48px;
-  width: 46px;
 }
 
 .social__item:hover::before {
@@ -70,9 +74,11 @@
 }
 
 .page-footer__copyright {
-  color: black;
   display: block;
+
+  color: black;
   margin: 0;
+  margin-bottom: 35px;
   margin-left: -40px;
   margin-top: 42px;
   padding: 0;
@@ -81,19 +87,21 @@
 }
 
 .page-footer__copyright-text::after {
+  width: 27px;
+  height: 34px;
+
   background: url("../../img/logo-htmlacademy.svg") no-repeat center;
   content: "";
-  height: 34px;
   left: 102px;
   position: absolute;
   top: -2px;
-  width: 27px;
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .page-footer {
     flex-direction: row;
     justify-content: flex-start;
+
     height: 120px;
   }
 
@@ -108,9 +116,9 @@
   }
 
   .page-footer__copyright {
+    letter-spacing: 0.5px;
     margin-left: 120px;
     margin-top: 0;
-    letter-spacing: 0.5px;
   }
 }
 
@@ -118,6 +126,7 @@
   .page-footer {
     flex-direction: row;
     justify-content: flex-start;
+
     width: $desktop-width;
     height: 120px;
   }
@@ -133,8 +142,8 @@
   }
 
   .page-footer__copyright {
+    letter-spacing: 0.5px;
     margin-left: 275px;
     margin-top: 0;
-    letter-spacing: 0.5px;
   }
 }
