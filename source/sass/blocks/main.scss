@@ -48,6 +48,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .intro--photo {
+    height: 248px;
+  }
+
   .intro__content {
     width: 490px;
     height: 100px;

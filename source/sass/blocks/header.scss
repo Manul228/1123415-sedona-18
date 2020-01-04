@@ -112,6 +112,10 @@
     min-height: 56px;
   }
 
+  .main-nav__item:not(:first-child) a {
+    box-shadow: none;
+  }
+
   .main-nav__list {
     display: flex;
     flex-direction: row;
