@@ -10,11 +10,10 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-
   background-color: white;
   color: black;
+  display: flex;
+  flex-direction: column;
   font-family: $base-font-family;
   margin: 0 auto;
   min-width: 320px;
@@ -23,6 +22,12 @@ body {
 
 .page-wrapper {
   @include container;
+}
+
+@media (min-width: $desktop-width) {
+  .shadow-wrapper {
+    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -48,7 +53,7 @@ input[type="radio"].visually-hidden {
   }
 }
 
-.style-reset {
+.list-style-reset {
   list-style: none;
   margin: 0;
   padding: 0;
