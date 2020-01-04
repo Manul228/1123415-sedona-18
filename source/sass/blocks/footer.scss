@@ -119,6 +119,11 @@
     letter-spacing: 0.5px;
     margin-left: 120px;
     margin-top: 0;
+    padding-top: 33px;
+  }
+
+  .page-footer__copyright-text::after {
+    top: 30px;
   }
 }
 
@@ -145,5 +150,10 @@
     letter-spacing: 0.5px;
     margin-left: 275px;
     margin-top: 0;
+    padding-top: 37px;
+  }
+
+  .page-footer__copyright-text::after {
+    top: 35px;
   }
 }
