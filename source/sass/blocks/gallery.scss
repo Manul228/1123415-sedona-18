@@ -176,9 +176,64 @@
     width: 100%;
   }
 
+  .gallery__sign-block {
+    margin-left: 20px;
+  }
+
+  .gallery__title {
+    margin-top: 15px;
+  }
+
   .gallery__likes {
+    width: 83px;
     margin-left: auto;
-    margin-right: 10%;
+    margin-top: 0;
+  }
+
+  .gallery__like-button::before {
+    left: 0;
+    top: 27px;
+  }
+
+  .gallery__count {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    margin: 0;
+  }
+
+  .gallery-video__description {
+    width: 415px;
+  }
+
+  .gallery-video__title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 0.87;
+    margin-top: 67px;
+  }
+
+  .gallery-video__text {
+    margin-top: 30px;
+  }
+
+  .gallery-video__player {
+    margin-top: 37px;
+    margin-bottom: 25px;
+  }
+
+  .gallery-video__image {
+    height: 500px;
+  }
+
+  .gallery-video__bar {
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery-video__control-buttons {
+    width: 100%;
+    height: auto;
   }
 }
 
