@@ -86,4 +86,10 @@
   .intro__description--photo {
     margin-top: 7px;
   }
+
+  @media (min-width: $desktop-width) {
+    .intro--photo {
+      margin-top: 40px;
+    }
+  }
 }
