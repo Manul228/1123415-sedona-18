@@ -427,12 +427,19 @@
   .gallery-video__player {
     width: ((100% * 2) / 3);
     margin-top: 35px;
+    margin-bottom: 0;
   }
 
   .gallery-video__image {
     height: 500px;
 
     background: url("../../img/video-desktop@1x.jpg") no-repeat;
+  }
+
+  .gallery-video__controls {
+    height: 93px;
+    margin-bottom: 0;
+    margin-top: -93px;
   }
 
   .gallery-video__button--repeat {
