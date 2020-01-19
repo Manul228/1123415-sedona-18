@@ -1,3 +1,8 @@
+.review-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .intro {
   display: flex;
 
@@ -25,6 +30,11 @@
   height: 112px;
 }
 
+.intro__content--form {
+  width: 276px;
+  margin: 0 auto;
+}
+
 .intro__title {
   font-size: 18px;
   font-weight: bold;
@@ -38,6 +48,10 @@
   margin-top: 37px;
 }
 
+.intro__title--form {
+  margin-top: 35px;
+}
+
 .intro__description {
   font-size: 14px;
   line-height: 1.9;
@@ -49,6 +63,10 @@
 
 .intro__description--photo {
   line-height: 1.71;
+}
+
+.intro__description--form {
+  line-height: 1.8;
 }
 
 @media (min-width: $tablet-width) {

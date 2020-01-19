@@ -67,7 +67,8 @@
   width: 100%;
 }
 
-.page-header__intro--photo {
+.page-header__intro--photo,
+.page-header__intro--form {
   align-items: flex-start;
   background: url("../img/bg-intro-triangle-mobile.svg") no-repeat bottom, url("../img/bg-back-mobile@1x.jpg") no-repeat left -224px top -232px;
   display: flex;
@@ -81,7 +82,8 @@
   width: 281px;
 }
 
-.page-header__title--photo {
+.page-header__title--photo,
+.page-header__title--form {
   height: 39px;
   margin-top: 50px;
   width: 229px;
