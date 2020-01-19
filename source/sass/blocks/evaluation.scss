@@ -1,0 +1,54 @@
+.evaluation {
+  margin: 0;
+  padding: 0;
+}
+
+.evaluation__title {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 18px;
+}
+
+.evaluation__wrap {
+  padding: 23px 20px 43px 20px;
+  margin-top: 15px;
+}
+
+.evaluation__item {
+  position: relative;
+}
+
+.evaluation__item:not(:last-child) {
+  margin-bottom: 45px
+}
+
+.evaluation__label {
+  text-transform: initial;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  margin-left: 80px;
+  cursor: pointer;
+}
+
+.evaluation__label::before {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: $light-grey;
+  left: 0;
+  top: -13px;
+}
+
+.evaluation__radio:checked ~ .evaluation__label::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: black;
+  left: 17px;
+  top: 4px;
+}
