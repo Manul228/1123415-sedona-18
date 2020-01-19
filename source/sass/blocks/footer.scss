@@ -38,6 +38,9 @@
   height: 48px;
 
   background-color: $light-grey-blue;
+}
+
+.social__item:not(.social__item--twitter) {
   margin-left: 5px;
 }
 

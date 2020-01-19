@@ -1,0 +1,32 @@
+.emotions {
+  margin: 0;
+  padding: 0;
+}
+
+.emotions__title {
+  margin-bottom: 0;
+  margin-top: 18px;
+}
+
+.emotions__wrap {
+  padding: 17px 22px 48px 19px;
+}
+
+.emotions__input {
+  width: 279px;
+  height: 160px;
+
+  background-color: $light-grey;
+  border: none;
+  padding: 18px 22px;
+  resize: none;
+}
+
+.emotions__input::placeholder {
+  color: black;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  text-align: left;
+}

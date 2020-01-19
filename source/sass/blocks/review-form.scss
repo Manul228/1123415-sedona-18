@@ -7,18 +7,34 @@
 }
 
 .review-form {
+  margin-bottom: 38px;
   margin-top: 2px;
 }
 
-.review-form>* {
+.review-form > * {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .review-form h2 {
-  text-align: center;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
+  text-align: center;
 }
 
+.button-send {
+  width: 280px;
+  height: 58px;
 
+  background-color: $light-grey-blue;
+  border: none;
+  color: white;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  line-height: 1.24;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}

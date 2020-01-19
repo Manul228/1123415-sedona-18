@@ -19,23 +19,27 @@
 
 .person__field {
   padding-left: 22px;
+  height: 58px;
+
+  background-color: $light-grey;
+  border: none;
 }
 
 .person__title {
+  letter-spacing: 0.5px;
   margin: 0;
   margin-top: 18px;
-  letter-spacing: 0.5px;
 }
 
 .person__field::placeholder {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  color: black;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
-  color: black;
 }
 
-.person__name .person__field{
+.person__name .person__field {
   width: 230px;
 }
 
@@ -51,11 +55,3 @@
 .person__fathername .person__field {
   width: 194px;
 }
-
-.person__field {
-  height: 58px;
-  border: none;
-  background-color: $light-grey;
-}
-
-

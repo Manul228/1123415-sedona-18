@@ -19,14 +19,22 @@
   background-color: $light-grey;
   height: 58px;
   padding-left: 22px;
+  position: relative;
 }
 
 .contacts__field::placeholder {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
   color: black;
+}
+
+.contacts__field--tel::after {
+  content: "";
+  width: 58px;
+  height: 58px;
+  background-color: $dark-grey;
 }
 
 .contacts__label {
