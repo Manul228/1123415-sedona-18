@@ -1,0 +1,42 @@
+.contacts {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__wrap {
+  padding: 20px 20px 25px 20px;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-top: 16px;
+  letter-spacing: 0.2px;
+}
+
+.contacts__field {
+  width: 280px;
+  border: none;
+  background-color: $light-grey;
+  height: 58px;
+  padding-left: 22px;
+}
+
+.contacts__field::placeholder {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  color: black;
+}
+
+.contacts__label {
+  display: block;
+  margin-left: 20px;
+  margin-bottom: 12px;
+  margin-top: 14px;
+  letter-spacing: -1px;
+}
+
+.contacts__label:first-child {
+  margin-top: 4px;
+}

@@ -1,0 +1,61 @@
+.person {
+  margin: 0;
+  padding: 0;
+}
+
+.person__wrap {
+  padding: 23px 20px 25px 20px;
+}
+
+.person__wrap > * {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.person__label {
+  letter-spacing: -1.2px;
+}
+
+.person__field {
+  padding-left: 22px;
+}
+
+.person__title {
+  margin: 0;
+  margin-top: 18px;
+  letter-spacing: 0.5px;
+}
+
+.person__field::placeholder {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  color: black;
+}
+
+.person__name .person__field{
+  width: 230px;
+}
+
+.person__surname,
+.person__fathername {
+  margin-top: 20px;
+}
+
+.person__surname .person__field {
+  width: 192px;
+}
+
+.person__fathername .person__field {
+  width: 194px;
+}
+
+.person__field {
+  height: 58px;
+  border: none;
+  background-color: $light-grey;
+}
+
+

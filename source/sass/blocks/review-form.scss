@@ -1,0 +1,24 @@
+.person,
+.contacts,
+.evaluation,
+.places,
+.emotions {
+  border: none;
+}
+
+.review-form {
+  margin-top: 2px;
+}
+
+.review-form>* {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.review-form h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+}
+
+
