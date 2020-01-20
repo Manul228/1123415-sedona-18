@@ -182,12 +182,21 @@
     min-height: 290px;
   }
 
+  .page-header__intro--form {
+    background: url("../img/bg-intro-triangle-tablet.svg") no-repeat bottom, url("../img/bg-back-tablet@1x.jpg") no-repeat left 0 top -227px;
+    min-height: 290px;
+  }
+
   .page-header__title {
     height: 350px;
     width: 460px;
   }
 
   .page-header__title--photo {
+    margin-top: -25px;
+  }
+
+  .page-header__title--form {
     margin-top: -25px;
   }
 }

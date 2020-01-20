@@ -56,22 +56,24 @@
 
         <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="person">
-            <h2 class="person__title">Представьтесь:</h2>
+            <div class="person__bordering">
+              <h2 class="person__title">Представьтесь:</h2>
 
-            <div class="person__wrap">
-              <div class="person__name">
-                <label class="person__label" for="name">Имя*:</label>
-                <input class="person__field" type="text" placeholder="Петр" name="name" id="name">
-              </div>
+              <div class="person__wrap">
+                <div class="person__name">
+                  <label class="person__label" for="name">Имя*:</label>
+                  <input class="person__field" type="text" placeholder="Петр" name="name" id="name">
+                </div>
 
-              <div class="person__surname">
-                <label class="person__label" for="surname">Фамилия*:</label>
-                <input class="person__field" type="text" placeholder="Иванов" name="surname" id="surname">
-              </div>
+                <div class="person__surname">
+                  <label class="person__label" for="surname">Фамилия*:</label>
+                  <input class="person__field" type="text" placeholder="Иванов" name="surname" id="surname">
+                </div>
 
-              <div class="person__fathername">
-                <label class="person__label" for="">Отчество:</label>
-                <input class="person__field" type="text" placeholder="Александрович" name="fathername" id="surname">
+                <div class="person__fathername">
+                  <label class="person__label" for="">Отчество:</label>
+                  <input class="person__field" type="text" placeholder="Александрович" name="fathername" id="surname">
+                </div>
               </div>
             </div>
           </fieldset>
@@ -145,6 +147,7 @@
             </div>
           </fieldset>
           <button class="button-send" type="submit">Отправить отзыв</button>
+          <small class="remark">* &#8211; обязательные поля</small>
         </form>
       </div>
     </main>

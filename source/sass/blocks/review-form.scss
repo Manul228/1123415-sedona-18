@@ -15,13 +15,6 @@
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.review-form h2 {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1.44;
-  text-align: center;
-}
-
 .button-send {
   width: 280px;
   height: 58px;
@@ -37,4 +30,37 @@
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
+}
+
+.remark {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .review-form {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    margin-bottom: 87px;
+  }
+
+  .review-form > * {
+    border-top: none;
+  }
+
+  .button-send {
+    width: 324px;
+    margin-left: 0;
+    letter-spacing: -0.2px;
+  }
+
+  .remark {
+    display: inline-block;
+
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: right;
+    margin-top: 19px;
+  }
 }

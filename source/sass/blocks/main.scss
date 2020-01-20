@@ -94,7 +94,19 @@
     height: 100px;
   }
 
+  .intro__content--form {
+    width: 440px;
+    height: 100px;
+  }
+
   .intro__title--photo {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 0.87;
+    margin-top: 75px;
+  }
+
+  .intro__title--form {
     font-size: 30px;
     font-weight: bold;
     line-height: 0.87;
@@ -103,6 +115,10 @@
 
   .intro__description--photo {
     margin-top: 7px;
+  }
+
+  .intro__description--form {
+    margin-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
