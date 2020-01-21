@@ -12,8 +12,11 @@
     <header class="page-header">
       <nav class="main-nav main-nav--opened">
         <button class="page-header__menu-close" type="button" aria-label="Закрыть меню">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
-            <polygon fill="#ffffff" points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199"
+            enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+            <polygon fill="#ffffff"
+              points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 " />
           </svg>
         </button>
 
@@ -28,11 +31,13 @@
       <div class="page-header__top">
         <a class="page-header__logo" aria-label="Лого Седоны"></a>
         <button class="page-header__menu-open" type="button" aria-label="Открыть меню">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982"
+            enable-background="new 0 0 22.928 21.982" xml:space="preserve">
             <g>
-              <rect fill="#81b3d2" width="22.928" height="3.964"/>
-              <rect fill="#81b3d2" y="9.009" width="22.928" height="3.964"/>
-              <rect fill="#81b3d2" y="18.018" width="22.928" height="3.964"/>
+              <rect fill="#81b3d2" width="22.928" height="3.964" />
+              <rect fill="#81b3d2" y="9.009" width="22.928" height="3.964" />
+              <rect fill="#81b3d2" y="18.018" width="22.928" height="3.964" />
             </g>
           </svg>
         </button>
@@ -84,8 +89,7 @@
             <div class="contacts__wrap">
               <label class="contacts__label contacts__label--tel" for="tel">
                 <span class="contacts__clarification">Контактный </span>телефон*:</label>
-              <input class="contacts__field" type="tel" placeholder="Введите телефон" name="tel"
-                id="tel">
+              <input class="contacts__field" type="tel" placeholder="Введите телефон" name="tel" id="tel">
 
               <label class="contacts__label contacts__label--email" for="email">Электронная почта*:</label>
               <input class="contacts__field" type="email" placeholder="Введите e-mail">
@@ -195,7 +199,28 @@
       </a>
 
     </footer>
+
+    <section class="popup popup--wrong">
+      <h2 class="popup__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+      <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="popup__button popup__button--wrong" type="button" aria-label="Закрыть">OK</button>
+    </section>
+
+    <section class="popup popup--sent">
+
+      <div class="popup__top">
+        <h2 class="popup__title">Ваш отзыв отправлен!</h2>
+        <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его
+          на
+          сайте.</p>
+      </div>
+
+      <div class="popup__bot">
+        <button class="popup__button popup__button--sent" type="button" aria-label="Закрыть">Закрыть окно</button>
+      </div>
+    </section>
   </div>
+
   <script src="js/menu.js"></script>
 </body>
 
