@@ -46,6 +46,28 @@
     line-height: 1.24;
     margin-top: 15px;
     text-align: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 125px;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.1);
+      left: 0;
+      top: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 125px;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.1);
+      left: auto;
+      right: 0;
+      top: 50%;
+    }
   }
 
   .emotions__wrap {

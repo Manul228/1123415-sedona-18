@@ -108,3 +108,32 @@
     width: 180px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .person__title {
+    margin-left: 77px;
+    margin-top: 77px;
+  }
+
+  .person__wrap {
+    padding-left: 80px;
+    padding-right: 120px;
+  }
+
+  .person__name .person__field {
+    width: 350px;
+  }
+
+  .person__surname,
+  .person__fathername {
+    margin-top: 20px;
+  }
+
+  .person__surname .person__field {
+    width: 312px;
+  }
+
+  .person__fathername .person__field {
+    width: 314px;
+  }
+}
