@@ -121,5 +121,45 @@
       top: 137px;
     }
   }
+}
 
+@media (min-width: $desktop-width) {
+  .places__title {
+    margin-top: 27px;
+    margin-left: 460px;
+
+    &::before {
+      width: 280px;
+      left: -340px;
+    }
+
+    &::after {
+      width: 280px;
+      right: -340px;
+    }
+  }
+
+  .places__wrap {
+    position: unset;
+    display: flex;
+    padding-top: 50px;
+    padding-right: 122px;
+    padding-left: 122px;
+    padding-bottom: 65px;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .places__item {
+    position: relative;
+
+    &:nth-child(n){
+      left: auto;
+      top: auto;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
 }

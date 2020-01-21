@@ -82,3 +82,22 @@
     padding-top: 15px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .emotions__title {
+
+    &::before {
+      width: 280px;
+      left: 10%;
+    }
+
+    &::after {
+      width: 280px;
+      right: 10%;
+    }
+  }
+
+  .emotions__wrap {
+    padding: 60px 120px 50px 120px;
+  }
+}

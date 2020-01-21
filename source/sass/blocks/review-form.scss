@@ -65,3 +65,20 @@
     margin-top: 19px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .button-send {
+    width: 480px;
+    margin-left: 120px;
+    letter-spacing: 0.5px;
+    padding-left: 0px;
+  }
+
+  .remark {
+    margin-right: 120px;
+  }
+
+  .review-form {
+    margin-bottom: 66px;
+  }
+}
