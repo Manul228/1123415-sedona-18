@@ -23,6 +23,17 @@
   background-color: $light-grey;
   border: none;
   padding-left: 22px;
+
+
+  &:hover,
+  &:focus {
+    background-color: $white-four;
+  }
+
+  &:active {
+    background-color: transparent;
+    border: 4px solid $white-four;
+  }
 }
 
 .person__title {

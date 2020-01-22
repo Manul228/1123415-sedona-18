@@ -40,6 +40,19 @@
   padding: 0;
   text-align: center;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $blue;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $white-four;
+  }
 }
 
 .map {

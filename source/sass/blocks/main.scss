@@ -32,6 +32,7 @@
 
 .intro__content--form {
   width: 276px;
+
   margin: 0 auto;
 }
 
@@ -87,6 +88,8 @@
 
   .map {
     height: 350px;
+
+    margin-bottom: 25px;
   }
 
   .intro__content--photo {
@@ -120,19 +123,23 @@
   .intro__description--form {
     margin-top: 5px;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    .intro--photo {
-      margin-top: 40px;
-    }
+@media (min-width: $desktop-width) {
+  .intro--photo {
+    margin-top: 40px;
+  }
 
-    .intro__title--form {
-      margin-top: 110px;
-      letter-spacing: 0.3px;
-    }
+  .intro__title--form {
+    letter-spacing: 0.3px;
+    margin-top: 110px;
+  }
 
-    .intro__description--form {
-      margin-top: 7px;
-    }
+  .intro__description--form {
+    margin-top: 7px;
+  }
+
+  .map {
+    margin-bottom: 5px;
   }
 }

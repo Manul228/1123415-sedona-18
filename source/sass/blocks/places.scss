@@ -55,6 +55,25 @@
   top: 6px;
 }
 
+.places__checkbox:hover ~ .places__label,
+.places__checkbox:focus ~ .places__label {
+  &:before {
+    background-color: $white-four;
+    border-color: $white-four;
+  }
+}
+
+.places__checkbox:active ~ .places__label {
+  &:before {
+    background-color: #d5d5d5;
+    border-color: #d5d5d5;
+  }
+
+  &:after {
+    background: url("../../img/icon-tick-four.svg") no-repeat;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .places {
     width: 100%;

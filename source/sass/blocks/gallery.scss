@@ -70,7 +70,7 @@
   width: 23px;
   height: 21px;
 
-  background: url("../img/icon-like.svg") no-repeat;
+  background: url("../img/icon-like-black.svg") no-repeat;
   content: "";
   position: absolute;
   top: -1px;
@@ -405,6 +405,10 @@
     width: (100% / 3);
     height: 267px;
     border-bottom: none;
+  }
+
+  .gallery__like-button::before {
+    background: url("../img/icon-like.svg") no-repeat;
   }
 
   .gallery__footer {
