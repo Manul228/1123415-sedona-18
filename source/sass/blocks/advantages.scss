@@ -39,7 +39,7 @@
     color: black;
     text-align: center;
 
-    .advantages__content {
+    .advantages__content:not(:last-child) {
       width: 280px;
       height: 168px;
 

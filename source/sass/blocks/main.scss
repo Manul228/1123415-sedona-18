@@ -123,12 +123,6 @@
       margin-top: 5px;
     }
   }
-
-  .map {
-    height: 350px;
-
-    margin-bottom: 25px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -149,9 +143,5 @@
     &--form {
       margin-top: 7px;
     }
-  }
-
-  .map {
-    margin-bottom: 5px;
   }
 }

@@ -239,13 +239,24 @@
       height: 57px;
 
       background-image: url("../img/bg-intro-triangle-tablet.svg");
-      top: 234px;
+    }
+
+    &--index {
+      padding-bottom: 18px;
+
+      &::after {
+        top: 462px;
+      }
     }
 
     &--photo,
     &--form {
       background: url("../img/bg-back-tablet@1x.jpg") no-repeat left 0 top -227px;
       min-height: 290px;
+
+      &::after {
+        top: 234px;
+      }
     }
   }
 
@@ -264,15 +275,20 @@
 
   .page-header__title {
     width: 460px;
-    height: 350px;
-  }
 
-  .page-header__title--photo {
-    margin-top: -25px;
-  }
+    &--index {
+      height: 350px;
+    }
 
-  .page-header__title--form {
-    margin-top: -25px;
+    &--photo {
+      margin-top: -25px;
+      height: 79px;
+    }
+
+    &--form {
+      margin-top: -25px;
+      height: 79px;
+    }
   }
 }
 
@@ -303,6 +319,7 @@
 
     width: 100%;
 
+
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
     min-height: 518px;
 
@@ -310,16 +327,24 @@
       height: 57px;
 
       background-image: url("../img/bg-intro-triangle-desktop.svg");
-      top: 462px;
+    }
+
+    &--index {
+      padding-bottom: 15px;
+
+      &::after {
+        top: 462px;
+      }
     }
 
     &--photo,
     &--form {
-      background: url("../img/bg-back-desktop@1x.jpg") no-repeat left 0 top -227px;
+      background: url("../img/bg-back-desktop@1x.jpg") no-repeat left 0 top -217px;
       min-height: 300px;
+      padding-top: 7px;
 
       &::after {
-        top: 234px;
+        top: 243px;
       }
     }
   }
@@ -332,7 +357,7 @@
 
       &--photo,
       &--form {
-        background-position: left 0 top -227px;
+        background-position: left 0 top -217px;
       }
     }
   }
