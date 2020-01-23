@@ -59,19 +59,19 @@
 
 .evaluation__radio:hover ~ .evaluation__label,
 .evaluation__radio:focus ~ .evaluation__label {
-  &:before {
+  &::before {
     background-color: $white-four;
     border-color: $white-four;
   }
 }
 
 .evaluation__radio:active ~ .evaluation__label {
-  &:before {
+  &::before {
     background-color: #d5d5d5;
     border-color: #d5d5d5;
   }
 
-  &:after {
+  &::after {
     background-color: rgba($color: #333333, $alpha: 0.3);
   }
 }

@@ -57,19 +57,19 @@
 
 .places__checkbox:hover ~ .places__label,
 .places__checkbox:focus ~ .places__label {
-  &:before {
+  &::before {
     background-color: $white-four;
     border-color: $white-four;
   }
 }
 
 .places__checkbox:active ~ .places__label {
-  &:before {
+  &::before {
     background-color: #d5d5d5;
     border-color: #d5d5d5;
   }
 
-  &:after {
+  &::after {
     background: url("../../img/icon-tick-four.svg") no-repeat;
   }
 }
@@ -172,13 +172,13 @@
   .places__item {
     position: relative;
 
-    &:nth-child(n){
+    &:nth-child(n) {
       left: auto;
       top: auto;
     }
 
     &:not(:last-child) {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 }
