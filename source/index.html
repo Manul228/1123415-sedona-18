@@ -15,7 +15,8 @@
         <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="page-header__menu-close" type="button" aria-label="Закрыть меню">
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="22.199" height="22.199">
-              <path fill="#ffffff" d="M22.199 2.804L19.396 0 11.1 8.297 2.804 0 0 2.803 8.297 11.1 0 19.396l2.803 2.803 8.297-8.297 8.296 8.297 2.803-2.803-8.296-8.296z"/>
+              <path fill="#ffffff"
+                d="M22.199 2.804L19.396 0 11.1 8.297 2.804 0 0 2.803 8.297 11.1 0 19.396l2.803 2.803 8.297-8.297 8.296 8.297 2.803-2.803-8.296-8.296z" />
             </svg>
           </button>
 
@@ -31,8 +32,8 @@
           <a class="page-header__logo" aria-label="Лого Седоны"></a>
           <button class="page-header__menu-open" type="button" aria-label="Открыть меню">
             <svg xmlns="http://www.w3.org/2000/svg" width="22.928" height="21.982" version="1">
-              <path fill="#81b3d2" d="M0 0h22.928v3.964H0zm0 9.009h22.928v3.964H0zm0 9.009h22.928v3.964H0z"/>
-              </svg>
+              <path fill="#81b3d2" d="M0 0h22.928v3.964H0zm0 9.009h22.928v3.964H0zm0 9.009h22.928v3.964H0z" />
+            </svg>
           </button>
         </div>
         <div class="page-header__intro">
@@ -62,9 +63,15 @@
 
             <div class="advantages__picture">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg">
-                <source media="(min-width: 320px)" srcset="img/main-city-mobile@1x.jpg">
+                <source media="(min-width: 1200px)"
+                        srcset="img/main-city-desktop@1x.jpg 1x,
+                                img/main-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                        srcset="img/main-city-tablet@1x.jpg 1x,
+                                img/main-city-tablet@2x.jpg 2x">
+                <source media="(min-width: 320px)"
+                        srcset="img/main-city-mobile@1x.jpg 1x,
+                                img/main-city-mobile@2x.jpg 2x">
                 <img class="advantages__image" src="img/main-city-mobile@1x.jpg" alt="Бар в Седоне">
               </picture>
 
@@ -105,10 +112,16 @@
 
             <div class="advantages__picture">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
-                <source media="(min-width: 320px)" srcset="img/main-bridge-mobile@1x.jpg">
-                <img class="advantages__image" src="img/main-city-mobile@1x.jpg" alt="Мост дьявола">
+                <source media="(min-width: 1200px)"
+                  srcset="img/main-bridge-desktop@1x.jpg 1x,
+                          img/main-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/main-bridge-tablet@1x.jpg 1x,
+                          img/main-bridge-tablet@2x.jpg 2x">
+                <source media="(min-width: 320px)"
+                  srcset="img/main-bridge-mobile@1x.jpg 1x,
+                          img/main-bridge-mobile@2x.jpg 2x">
+                <img class="advantages__image" src="img/main-bridge-mobile@1x.jpg" alt="Мост дьявола">
               </picture>
 
             </div>
@@ -180,7 +193,7 @@
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="19.979" height="14.015">
                   <path fill="#fff"
                     d="M17.145 0H2.835A2.842 2.842 0 000 2.835v8.345a2.842 2.842 0 002.835 2.835h14.31a2.842 2.842 0 002.835-2.835V2.835A2.844 2.844 0 0017.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z" />
-                  </svg>
+                </svg>
               </a>
             </li>
           </ul>
@@ -189,7 +202,10 @@
         <a class="page-footer__copyright" href="https://htmlacademy.ru/" title="htmlacademy">
           <p class="page-footer__copyright-text">Разработано</p>
           <div class="page-footer__copyright-logo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09"><path fill="#000000" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09">
+              <path fill="#000000"
+                d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" />
+            </svg>
           </div>
         </a>
 

@@ -52,7 +52,7 @@
 
 .page-header__top {
   width: 100%;
-  height: 57px;
+  height: 56px;
 
   background: white;
   position: relative;
@@ -66,6 +66,7 @@
   left: 34%;
   position: absolute;
   top: 0;
+  z-index: 100;
 }
 
 .page-header__intro {
@@ -73,35 +74,68 @@
   justify-content: center;
   align-items: center;
 
-  width: 100%;
-  height: 389px;
+  width: 320px;
+  height: 388px;
 
-  background: url("../img/bg-intro-triangle-mobile.svg") no-repeat bottom, url("../img/bg-back-mobile@1x.jpg") no-repeat left -224px top 0;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat left -224px top -1px;
+  padding-top: 5px;
+  position: relative;
+
+  &::after {
+    width: 100%;
+    height: 28px;
+
+    background: url("../img/bg-intro-triangle-mobile.svg") no-repeat bottom;
+    content: "";
+    position: absolute;
+    top: 389px - 28px;
+  }
+
+  &--photo,
+  &--form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 100%;
+    height: 157px;
+
+    background: url("../img/bg-back-mobile@1x.jpg") no-repeat left -224px top -232px;
+    padding-top: 1px;
+
+    &::after {
+      top: 157px - 27.5px;
+    }
+  }
 }
 
-.page-header__intro--photo,
-.page-header__intro--form {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+/*TODO*/
 
-  width: 100%;
-  height: 157px;
+@media
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  .page-header__intro {
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat left -224px top 0;
+    background-size: 768px auto;
 
-  background: url("../img/bg-intro-triangle-mobile.svg") no-repeat bottom, url("../img/bg-back-mobile@1x.jpg") no-repeat left -224px top -232px;
+    &--photo,
+    &--form {
+      background: url("../img/bg-back-mobile@1x.jpg") no-repeat left -224px top -232px;
+    }
+  }
 }
 
 .page-header__title {
   width: 281px;
   height: 214px;
-}
 
-.page-header__title--photo,
-.page-header__title--form {
-  width: 229px;
-  height: 39px;
+  &--photo,
+  &--form {
+    width: 229px;
+    height: 39px;
 
-  margin-top: 50px;
+    margin-top: 50px;
+  }
 }
 
 .page-header__menu-open {
