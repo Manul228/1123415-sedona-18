@@ -64,6 +64,8 @@
 
   & iframe {
     border: none;
+    position: absolute;
+    z-index: 30;
   }
 
   &::after {
@@ -78,11 +80,6 @@
     left: 145px;
     z-index: 20;
   }
-}
-
-.map iframe {
-  position: absolute;
-  z-index: 30;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
