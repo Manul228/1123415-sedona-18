@@ -3,6 +3,9 @@ var navOpen = document.querySelector('.page-header__menu-open');
 var navClose = document.querySelector('.page-header__menu-close');
 
 navMain.classList.remove('main-nav--nojs');
+navMain.classList.remove('main-nav--opened');
+navMain.classList.add('main-nav--closed');
+
 
 navOpen.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {
