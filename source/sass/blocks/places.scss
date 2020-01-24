@@ -8,11 +8,11 @@
 }
 
 .places__title {
-  margin-top: 18px;
-  margin-bottom: 10px;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
+  margin-bottom: 10px;
+  margin-top: 18px;
   text-align: center;
 }
 
@@ -37,26 +37,33 @@
   text-transform: initial;
 
   &::before {
-    content: "";
-    position: absolute;
     width: 56px;
     height: 56px;
-    border-radius: 5px;
-    border: solid 5px $light-grey;
+
     background-color: $light-grey;
+    border: solid 5px $light-grey;
+    border-radius: 5px;
+    content: "";
     left: 0;
+    position: absolute;
     top: -13px;
   }
 }
 
 .places__checkbox:checked ~ .places__label::after {
-  content: "";
-  position: absolute;
-  background: url("../../img/icon-tick.svg") no-repeat;
   width: 24px;
   height: 16px;
+
+  background: url("../../img/icon-tick.svg") no-repeat;
+  content: "";
   left: 16px;
+  position: absolute;
   top: 6px;
+}
+
+.places__checkbox:focus ~ .places__label {
+  border: 2px solid $light-grey-blue;
+  border-radius: 5px;
 }
 
 .places__checkbox:hover ~ .places__label,
@@ -85,47 +92,53 @@
 
   .places__title {
     width: 280px;
+
     font-size: 21px;
     font-weight: bold;
-    line-height: 1.24;
-    margin-top: 25px;
-    text-align: center;
-    margin-left: 185px;
     letter-spacing: 0.2px;
+    line-height: 1.24;
+    margin-left: 185px;
+    margin-top: 25px;
     position: relative;
+    text-align: center;
 
     &::before {
-      content: "";
-      position: absolute;
       width: 125px;
       height: 1px;
+
       background-color: rgba(0, 0, 0, 0.1);
+      content: "";
       left: -185px;
+      position: absolute;
       top: 52%;
     }
 
     &::after {
-      content: "";
-      position: absolute;
       width: 125px;
       height: 1px;
+
       background-color: rgba(0, 0, 0, 0.1);
+      content: "";
       left: auto;
+      position: absolute;
       right: -185px;
       top: 52%;
     }
   }
 
   .places__wrap {
+    display: table;
+
     width: 100%;
     height: 230px;
-    display: table;
+
     margin: 0 auto;
     padding: 0 60px 55px 55px;
   }
 
   .places__top {
     display: table-row;
+
     height: auto;
   }
 
@@ -135,54 +148,63 @@
 
   .places__item {
     display: table-cell;
+
+    left: 40px;
     position: relative;
     top: 50px;
-    left: 40px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .places__title {
-    margin-top: 27px;
     margin-left: 460px;
+    margin-top: 27px;
 
     &::before {
       width: 280px;
+
       left: -340px;
     }
 
     &::after {
       width: 280px;
+
       right: -340px;
     }
   }
 
   .places__wrap {
     display: flex;
-    padding: 48px 0 0 0;
     justify-content: space-between;
-    height: 140px;
+
     width: 960px;
+    height: 140px;
+
+    padding: 48px 0 0 0;
   }
 
-  .places__top{
+  .places__top {
     display: flex;
     justify-content: space-between;
+
     width: 448px;
   }
 
   .places__bot {
     display: flex;
     justify-content: space-between;
+
     width: 442px;
+
     padding-right: 5px;
   }
 
   .places__item {
     display: inline-block;
+
+    left: 0;
     position: relative;
     top: 0;
-    left: 0;
 
     &:not(:last-child) {
       margin: 0;

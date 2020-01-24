@@ -27,38 +27,14 @@
   background-color: $light-grey;
   border: none;
   padding-left: 22px;
-}
 
-.contacts__field::placeholder {
-  color: black;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1.44;
-}
-
-.contacts__label--tel::after {
-  width: 58px;
-  height: 58px;
-
-  background: url("../../img/icon-phone.svg") no-repeat 50% 50%;
-  background-color: $dark-grey;
-  content: "";
-  left: 242px;
-  position: absolute;
-  top: 97px;
-}
-
-.contacts__label--email::after {
-  width: 58px;
-  height: 58px;
-
-  background: url("../../img/icon-mail.svg") no-repeat 50% 50%;
-  background-color: $dark-grey;
-  content: "";
-  left: 242px;
-  position: absolute;
-  top: 201px;
+  &::placeholder {
+    color: black;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.44;
+  }
 }
 
 .contacts__label {
@@ -71,6 +47,34 @@
 
   &:first-child {
     margin-top: 4px;
+  }
+
+  &--tel {
+    &::after {
+      width: 58px;
+      height: 58px;
+
+      background: url("../../img/icon-phone.svg") no-repeat 50% 50%;
+      background-color: $dark-grey;
+      content: "";
+      left: 242px;
+      position: absolute;
+      top: 97px;
+    }
+  }
+
+  &--email {
+    &::after {
+      width: 58px;
+      height: 58px;
+
+      background: url("../../img/icon-mail.svg") no-repeat 50% 50%;
+      background-color: $dark-grey;
+      content: "";
+      left: 242px;
+      position: absolute;
+      top: 201px;
+    }
   }
 }
 
@@ -181,35 +185,37 @@
     width: 316px;
   }
 
-  .contacts__label--tel {
-    margin-left: 10%;
-    margin-top: 100px;
+  .contacts__label {
+    &--tel {
+      margin-left: 10%;
+      margin-top: 100px;
 
-    & + .contacts__field {
-      margin-left: 15px;
-      margin-top: -15px;
-      padding-top: 7px;
+      & + .contacts__field {
+        margin-left: 15px;
+        margin-top: -15px;
+        padding-top: 7px;
+      }
+
+      &::after {
+        left: 462px;
+        top: 141px;
+      }
     }
 
-    &::after {
-      left: 462px;
-      top: 141px;
-    }
-  }
+    &--email {
+      margin-left: 77px;
+      margin-top: 3px;
 
-  .contacts__label--email {
-    margin-left: 77px;
-    margin-top: 3px;
+      & + .contacts__field {
+        margin-left: 17px;
+        margin-top: -15px;
+        padding-top: 7px;
+      }
 
-    & + .contacts__field {
-      margin-left: 17px;
-      margin-top: -15px;
-      padding-top: 7px;
-    }
-
-    &::after {
-      left: 1021px;
-      top: 141px;
+      &::after {
+        left: 1021px;
+        top: 141px;
+      }
     }
   }
 }
