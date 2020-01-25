@@ -192,14 +192,8 @@
       margin-left: 10%;
       margin-top: 100px;
 
-      & + .contacts__field {
-        margin-left: 15px;
-        margin-top: -15px;
-        padding-top: 7px;
-      }
-
       &::after {
-        left: 462px;
+        left: 463px;
         top: 141px;
       }
     }
@@ -208,16 +202,22 @@
       margin-left: 77px;
       margin-top: 3px;
 
-      & + .contacts__field {
-        margin-left: 17px;
-        margin-top: -15px;
-        padding-top: 7px;
-      }
-
       &::after {
         left: 1021px;
         top: 141px;
       }
     }
+  }
+
+  .contacts__label--tel + .contacts__field {
+    margin-left: 15px;
+    margin-top: -15px;
+    padding-top: 7px;
+  }
+
+  .contacts__label--email + .contacts__field {
+    margin-left: 17px;
+    margin-top: -15px;
+    padding-top: 7px;
   }
 }

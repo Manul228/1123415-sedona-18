@@ -269,7 +269,7 @@
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-header__intro {
-      background: url("../img/bg-back-tablet@2x.jpg") no-repeat left -224px top 0;
+      background: url("../img/bg-back-tablet@2x.jpg") no-repeat;
       background-size: 768px auto;
 
       &--photo,
@@ -340,6 +340,7 @@
 
       &::after {
         top: 462px;
+        left: 0;
       }
     }
 
@@ -351,6 +352,7 @@
 
       &::after {
         top: 243px;
+        left: 0;
       }
     }
   }

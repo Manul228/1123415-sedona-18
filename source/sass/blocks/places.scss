@@ -62,7 +62,7 @@
 }
 
 .places__checkbox:focus ~ .places__label {
-  border: 2px solid $light-grey-blue;
+  outline: 2px solid $light-grey-blue;
   border-radius: 5px;
 }
 

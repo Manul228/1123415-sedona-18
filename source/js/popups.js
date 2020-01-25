@@ -6,7 +6,7 @@ var popupSent = document.querySelector('.popup--sent');
 var popupSentOk = document.querySelector('.popup__button--sent');
 
 
-buttonSend.addEventListener('click', evt => {
+buttonSend.addEventListener('submit', function(evt) {
   evt.preventDefault();
   var isFilled = true;
 
