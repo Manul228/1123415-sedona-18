@@ -1,0 +1,84 @@
+.person,
+.contacts,
+.evaluation,
+.places,
+.emotions {
+  border: none;
+}
+
+.review-form {
+  margin-bottom: 38px;
+  margin-top: 2px;
+}
+
+.review-form > * {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.button-send {
+  width: 280px;
+  height: 58px;
+
+  background-color: $light-grey-blue;
+  border: none;
+  color: white;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  line-height: 1.24;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.remark {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .review-form {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    margin-bottom: 87px;
+  }
+
+  .review-form > * {
+    border-top: none;
+  }
+
+  .button-send {
+    width: 324px;
+    margin-left: 0;
+    letter-spacing: 0.5px;
+    padding-left: 0;
+  }
+
+  .remark {
+    display: inline-block;
+
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: right;
+    margin-top: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button-send {
+    width: 480px;
+    margin-left: 120px;
+    letter-spacing: 0.5px;
+    padding-left: 0;
+  }
+
+  .remark {
+    margin-right: 120px;
+  }
+
+  .review-form {
+    margin-bottom: 66px;
+  }
+}

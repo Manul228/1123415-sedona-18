@@ -1,0 +1,150 @@
+.person {
+  margin: 0;
+  padding: 0;
+}
+
+.person__wrap {
+  padding: 23px 20px 25px 20px;
+}
+
+.person__wrap > * {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.person__label {
+  letter-spacing: -1.2px;
+}
+
+.person__field {
+  height: 58px;
+
+  background-color: $light-grey;
+  border: none;
+  padding-left: 22px;
+
+
+  &:hover,
+  &:focus {
+    background-color: $white-four;
+  }
+
+  &:active {
+    background-color: transparent;
+    border: 4px solid $white-four;
+  }
+}
+
+.person__title {
+  letter-spacing: 0.5px;
+  margin: 0;
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  text-align: center;
+}
+
+.person__field::placeholder {
+  color: black;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+}
+
+.person__name .person__field {
+  width: 230px;
+}
+
+.person__surname,
+.person__fathername {
+  margin-top: 20px;
+}
+
+.person__surname .person__field {
+  width: 192px;
+}
+
+.person__fathername .person__field {
+  width: 194px;
+}
+
+@media (min-width: $tablet-width) {
+  .person {
+    width: 50%;
+  }
+
+  .person__bordering {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .person__wrap {
+    padding-left: 58px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 64px;
+  }
+
+  .person__title {
+    text-align: left;
+    margin-left: 55px;
+    margin-top: 55px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 0.8;
+  }
+
+  .person__label {
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: normal;
+  }
+
+  .person__name .person__field {
+    width: 216px;
+  }
+
+  .person__surname,
+  .person__fathername {
+    margin-top: 20px;
+  }
+
+  .person__surname .person__field {
+    width: 178px;
+  }
+
+  .person__fathername .person__field {
+    width: 180px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .person__title {
+    margin-left: 77px;
+    margin-top: 77px;
+  }
+
+  .person__wrap {
+    padding-left: 80px;
+    padding-right: 120px;
+  }
+
+  .person__name .person__field {
+    width: 350px;
+  }
+
+  .person__surname,
+  .person__fathername {
+    margin-top: 20px;
+  }
+
+  .person__surname .person__field {
+    width: 312px;
+  }
+
+  .person__fathername .person__field {
+    width: 314px;
+  }
+}

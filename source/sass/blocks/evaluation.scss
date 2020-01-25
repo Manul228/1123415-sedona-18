@@ -1,0 +1,124 @@
+.evaluation {
+  margin: 0;
+  padding: 0;
+}
+
+.evaluation__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.evaluation__wrap {
+  margin-top: 15px;
+  padding: 23px 20px 43px 20px;
+}
+
+.evaluation__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 45px;
+  }
+}
+
+.evaluation__label {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  margin-left: 80px;
+  text-transform: initial;
+
+  &::before {
+    width: 56px;
+    height: 56px;
+
+    background-color: $light-grey;
+    border-radius: 50%;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: -13px;
+  }
+}
+
+.evaluation__radio:checked ~ .evaluation__label::after {
+  width: 22px;
+  height: 22px;
+
+  background-color: black;
+  border-radius: 50%;
+  content: "";
+  left: 17px;
+  position: absolute;
+  top: 4px;
+}
+
+.evaluation__radio:focus ~ .evaluation__label {
+  border: 2px solid $light-grey-blue;
+  border-radius: 5px;
+}
+
+.evaluation__radio:hover ~ .evaluation__label,
+.evaluation__radio:focus ~ .evaluation__label {
+  &::before {
+    background-color: $white-four;
+    border-color: $white-four;
+  }
+}
+
+.evaluation__radio:active ~ .evaluation__label {
+  &::before {
+    background-color: #d5d5d5;
+    border-color: #d5d5d5;
+  }
+
+  &::after {
+    background-color: rgba($color: #333333, $alpha: 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .evaluation {
+    width: 50%;
+
+    order: -1;
+  }
+
+  .evaluation__wrap {
+    margin-top: 50px;
+    padding-left: 0;
+  }
+
+  .evaluation__title {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.24;
+    margin-top: 50px;
+    text-align: left;
+  }
+
+  .evaluation__item {
+    &:not(:last-child) {
+      margin-bottom: 53px;
+    }
+  }
+
+  .evaluation__label {
+    margin-left: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .evaluation__title {
+    margin-left: 200px;
+    margin-top: 73px;
+  }
+
+  .evaluation__wrap {
+    padding-left: 20.5%;
+  }
+}

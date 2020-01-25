@@ -1,0 +1,107 @@
+.emotions {
+  margin: 0;
+  padding: 0;
+}
+
+.emotions__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  margin-bottom: 0;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.emotions__wrap {
+  padding: 17px 22px 48px 19px;
+}
+
+.emotions__input {
+  width: 279px;
+  height: 160px;
+
+  background-color: $light-grey;
+  border: none;
+  padding: 18px 22px;
+  resize: none;
+}
+
+.emotions__input::placeholder {
+  color: black;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .emotions {
+    width: 100%;
+  }
+
+  .emotions__title {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.24;
+    margin-top: 15px;
+    position: relative;
+    text-align: center;
+
+    &::before {
+      width: 125px;
+      height: 1px;
+
+      background-color: rgba(0, 0, 0, 0.1);
+      content: "";
+      left: 0;
+      position: absolute;
+      top: 50%;
+    }
+
+    &::after {
+      width: 125px;
+      height: 1px;
+
+      background-color: rgba(0, 0, 0, 0.1);
+      content: "";
+      left: auto;
+      position: absolute;
+      right: 0;
+      top: 50%;
+    }
+  }
+
+  .emotions__wrap {
+    padding-bottom: 52px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 60px;
+  }
+
+  .emotions__input {
+    width: 100%;
+
+    padding-top: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .emotions__title {
+    &::before {
+      width: 280px;
+
+      left: 10%;
+    }
+
+    &::after {
+      width: 280px;
+
+      right: 10%;
+    }
+  }
+
+  .emotions__wrap {
+    padding: 60px 120px 52px 120px;
+  }
+}
