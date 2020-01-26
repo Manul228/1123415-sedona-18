@@ -98,7 +98,6 @@
   line-height: 1.5;
   margin: 0;
   margin-top: 18px;
-  padding: 0 15px;
   text-align: center;
 }
 
@@ -145,7 +144,9 @@
       .advantages__content {
         width: 160px;
 
-        border-bottom: none;
+        &:not(:last-child) {
+          border-bottom: none;
+        }
       }
 
       .advantages__title {
@@ -170,6 +171,7 @@
   .advantages__description {
     line-height: 1.5;
     margin-top: 23px;
+    padding: 0;
   }
 
   .advantages__content {

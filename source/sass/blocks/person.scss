@@ -21,8 +21,8 @@
   height: 58px;
 
   background-color: $light-grey;
-  border: none;
-  padding-left: 22px;
+  padding-left: 17px;
+  border: 4px solid transparent;
 
 
   &:hover,
@@ -34,6 +34,24 @@
     background-color: transparent;
     border: 4px solid $white-four;
   }
+
+  &::placeholder {
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.44;
+    text-align: left;
+  }
+
+  &:-ms-input-placeholder {
+    color: black;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.44;
+    text-align: left;
+  }
 }
 
 .person__title {
@@ -44,14 +62,6 @@
   font-weight: bold;
   line-height: 1.44;
   text-align: center;
-}
-
-.person__field::placeholder {
-  color: black;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1.44;
 }
 
 .person__name .person__field {

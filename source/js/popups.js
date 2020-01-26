@@ -6,7 +6,7 @@ var popupSent = document.querySelector('.popup--sent');
 var popupSentOk = document.querySelector('.popup__button--sent');
 
 
-buttonSend.addEventListener('click', evt => {
+form.addEventListener('submit', function(evt) {
   evt.preventDefault();
   var isFilled = true;
 
@@ -17,10 +17,8 @@ buttonSend.addEventListener('click', evt => {
   var tel = form.tel.value;
   var email = form.email.value;
 
-  var emotions = form.emotions.value;
-
   if (!name || !surname || !fathername ||
-    !tel || !email || !emotions) {
+    !tel || !emotions) {
       isFilled = false;
     }
 

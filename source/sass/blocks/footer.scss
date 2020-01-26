@@ -1,13 +1,17 @@
 .page-footer {
   @include flex-column-center;
-}
 
-.page-footer__logo {
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 1.24;
-  margin-top: 35px;
-  text-align: center;
+  &--index {
+    padding-top: 37px;
+  }
+
+  &--photo {
+    padding-top: 35px;
+  }
+
+  &--form {
+    padding-top: 34px;
+  }
 }
 
 .page-footer__copyright-text {
@@ -15,6 +19,13 @@
   line-height: 1.86;
   margin: 0;
   padding: 0;
+}
+
+.page-footer__hashtag {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.24;
 }
 
 .social {
@@ -44,7 +55,7 @@
   margin-left: 5px;
 }
 
-.social__item path {
+.social__icon {
   fill: white;
 }
 
@@ -56,7 +67,7 @@
   background-color: $dark-blue;
 }
 
-.social__item:active path {
+.social__item:active .social__icon {
   fill: rgba($color: white, $alpha: 0.3);
 }
 
@@ -77,14 +88,14 @@
   position: relative;
   left: 104px;
   top: -29px;
+}
 
-  &:hover path {
-    fill: $light-grey-blue;
-  }
+.page-footer__copyright:hover .page-footer__logo {
+  fill: $light-grey-blue;
+}
 
-  &:active path {
-    fill: rgba($color: black, $alpha: 0.3);
-  }
+.page-footer__copyright:active .page-footer__logo {
+  fill: rgba($color: black, $alpha: 0.3);
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
@@ -94,9 +105,21 @@
     align-items: flex-start;
 
     height: 120px;
+
+    &--index {
+      padding-top: 0;
+    }
+
+    &--photo {
+      padding-top: 0;
+    }
+
+    &--form {
+      padding-top: 0;
+    }
   }
 
-  .page-footer__logo {
+  .page-footer__hashtag {
     margin-left: 60px;
     margin-top: 20px;
   }
@@ -120,19 +143,31 @@
 
     width: $desktop-width;
     height: 120px;
+
+    &--index {
+      margin-top: 0;
+      height: 150px;
+      padding-top: 0;
+      padding-bottom: 37px;
+    }
+
+    &--photo {
+      margin-top: 28px;
+      height: 200px;
+    }
+
+    &--form {
+      padding-top: 0;
+    }
   }
 
-  .page-footer--photo {
-    margin-top: 85px;
-  }
-
-  .page-footer__logo {
-    margin-left: 115px;
+  .page-footer__hashtag {
+    margin-left: 120px;
     margin-top: -5px;
   }
 
   .social {
-    margin-left: 270px;
+    margin-left: 269px;
     margin-top: 0;
   }
 
@@ -140,6 +175,6 @@
     letter-spacing: 0.5px;
     margin-left: 276px;
     margin-top: 0;
-    padding-top: 67px;
+    padding-top: 74px;
   }
 }

@@ -30,6 +30,19 @@
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $blue;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $white-four;
+  }
 }
 
 .remark {
@@ -51,8 +64,9 @@
 
   .button-send {
     width: 324px;
-    margin-left: 0;
+
     letter-spacing: 0.5px;
+    margin-left: 0;
     padding-left: 0;
   }
 
@@ -61,16 +75,17 @@
 
     font-size: 14px;
     line-height: 1.86;
-    text-align: right;
     margin-top: 19px;
+    text-align: right;
   }
 }
 
 @media (min-width: $desktop-width) {
   .button-send {
     width: 480px;
-    margin-left: 120px;
+
     letter-spacing: 0.5px;
+    margin-left: 120px;
     padding-left: 0;
   }
 
