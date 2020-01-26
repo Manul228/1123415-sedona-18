@@ -22,17 +22,18 @@
 
   background-color: $light-grey;
   border: none;
+  overflow: auto;
   padding: 18px 22px;
   resize: none;
-}
 
-.emotions__input::placeholder {
-  color: black;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1.44;
-  text-align: left;
+  &::placeholder {
+    color: black;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.44;
+    text-align: left;
+  }
 }
 
 @media (min-width: $tablet-width) {
