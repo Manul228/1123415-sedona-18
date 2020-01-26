@@ -152,6 +152,11 @@
   top: 13px;
 }
 
+/*TODO*/
+.main-nav--opened .page-header__menu-open {
+  display: none;
+}
+
 @media (max-width: $tablet-width - 1px) {
   .main-nav--closed .main-nav__item {
     display: none;
@@ -310,7 +315,7 @@
     background: url("../img/logo-sedona-desktop.svg");
     left: 42.3%;
     position: absolute;
-    top: -55px;
+    top: -56px;
   }
 
   .main-header__title {
