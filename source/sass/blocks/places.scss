@@ -81,7 +81,24 @@
   }
 
   &::after {
-    background: url("../../img/icon-tick-four.svg") no-repeat;
+    background: url("../img/icon-tick-four.svg") no-repeat;
+  }
+}
+
+.places__checkbox:disabled ~ .places__label {
+  color: rgba($color: #666666, $alpha: 0.3);
+
+  &::before {
+    background-color: rgba($color: #666666, $alpha: 0.3);
+    border-color: rgba($color: #666666, $alpha: 0.3);
+  }
+
+  &::after {
+    width: 25px;
+    height: 25px;
+    top: 5px;
+    background-color: mintcream;
+    background: url("../img/icon-cross.svg") no-repeat;
   }
 }
 

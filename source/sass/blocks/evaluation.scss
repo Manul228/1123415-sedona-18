@@ -59,8 +59,8 @@
 }
 
 .evaluation__radio:focus ~ .evaluation__label {
-  outline: 2px solid $light-grey-blue;
   border-radius: 5px;
+  outline: 2px solid $light-grey-blue;
 }
 
 .evaluation__radio:hover ~ .evaluation__label,
@@ -83,15 +83,16 @@
 }
 
 .evaluation__radio:disabled ~ .evaluation__label {
+  color: rgba($color: #666666, $alpha: 0.3);
+
   &::before {
-    background-color: pink;
-    border-color: midnightblue;
+    background-color: rgba($color: #666666, $alpha: 0.3);
+    border-color: rgba($color: #666666, $alpha: 0.3);
   }
 
   &::after {
-    background-color: olive;
+    background-color: rgba($color: #666666, $alpha: 0.3);
   }
-
 }
 
 @media (min-width: $tablet-width) {
