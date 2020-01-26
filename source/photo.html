@@ -58,6 +58,7 @@
 
           <form action="https://echo.htmlacademy.ru" method="post">
           <section class="gallery">
+            <h2 class="visually-hidden">Фотографии местности</h2>
 
             <div class="gallery__item gallery__item--first">
               <a class="gallery__link" href="#">
@@ -91,7 +92,7 @@
                 </div>
 
                 <div class="gallery__likes">
-                  <button class="gallery__like-button" type="submit">
+                  <button class="gallery__like-button" type="submit" aria-label="Поставить лайк">
                   </button>
                   <span class="gallery__count">1350</span>
                 </div>
@@ -129,7 +130,7 @@
                 </div>
 
                 <div class="gallery__likes">
-                  <button class="gallery__like-button" type="submit">
+                  <button class="gallery__like-button" type="submit" aria-label="Поставить лайк">
                   </button>
                   <span class="gallery__count">143</span>
                 </div>
@@ -167,7 +168,7 @@
 
                 </div>
                 <div class="gallery__likes">
-                  <button class="gallery__like-button" type="submit">
+                  <button class="gallery__like-button" type="submit" aria-label="Поставить лайк">
                   </button>
                   <span class="gallery__count">96</span>
                 </div>
@@ -205,7 +206,7 @@
                 </div>
 
                 <div class="gallery__likes">
-                  <button class="gallery__like-button" type="submit">
+                  <button class="gallery__like-button" type="submit" aria-label="Поставить лайк">
                   </button>
                   <span class="gallery__count">254</span>
                 </div>
@@ -215,39 +216,43 @@
           </section>
           </form>
 
-          <div class="gallery-video__top">
-            <div class="gallery-video__description">
-              <h2 class="gallery-video__title">Все еще сомневаетесь?</h2>
-              <p class="gallery-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-                очередной раз!</p>
-            </div>
-          </div>
+          <section class="gallery-video">
 
-          <div class="gallery-video__player">
-            <div class="gallery-video__image">
-            </div>
-            <div class="gallery-video__controls">
-              <div class="gallery-video__bar">
+            <div class="gallery-video__top">
+              <div class="gallery-video__description">
+                <h2 class="gallery-video__title">Все еще сомневаетесь?</h2>
+                <p class="gallery-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+                  очередной раз!</p>
               </div>
-              <div class="gallery-video__control-buttons">
-                <button class="gallery-video__button gallery-video__button--repeat">
-                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="20">
-                      <use xlink:href="#icon-video-replay"></use>
+            </div>
+
+            <div class="gallery-video__player">
+              <div class="gallery-video__image">
+              </div>
+              <div class="gallery-video__controls">
+                <div class="gallery-video__bar">
+                </div>
+                <div class="gallery-video__control-buttons">
+                  <button class="gallery-video__button gallery-video__button--repeat" aria-label="Проиграть сначала">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="20">
+                        <use xlink:href="#icon-video-replay"></use>
+                      </svg>
+                  </button>
+                  <button class="gallery-video__button gallery-video__button--subtitle" aria-label="Включить субтитры">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="20">
+                      <use xlink:href="#icon-video-subtitles"></use>
                     </svg>
-                </button>
-                <button class="gallery-video__button gallery-video__button--subtitle">
-                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="20">
-                    <use xlink:href="#icon-video-subtitles"></use>
-                  </svg>
-                </button>
-                <button class="gallery-video__button gallery-video__button--full-screen">
-                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-                    <use xlink:href="#icon-video-fullscreen"></use>
-                  </svg>
-                </button>
+                  </button>
+                  <button class="gallery-video__button gallery-video__button--full-screen" aria-label="Развернуть на весь экран">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                      <use xlink:href="#icon-video-fullscreen"></use>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
+
         </div>
       </main>
 
