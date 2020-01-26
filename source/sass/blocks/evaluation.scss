@@ -82,6 +82,18 @@
   }
 }
 
+.evaluation__radio:disabled ~ .evaluation__label {
+  &::before {
+    background-color: pink;
+    border-color: midnightblue;
+  }
+
+  &::after {
+    background-color: olive;
+  }
+
+}
+
 @media (min-width: $tablet-width) {
   .evaluation {
     width: 50%;
