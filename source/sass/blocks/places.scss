@@ -89,15 +89,15 @@
   color: rgba($color: #666666, $alpha: 0.3);
 
   &::before {
-    background-color: rgba($color: #666666, $alpha: 0.3);
-    border-color: rgba($color: #666666, $alpha: 0.3);
+    background: $dark-grey;
+    border-color: $dark-grey;
   }
 
   &::after {
     width: 25px;
     height: 25px;
-    top: 5px;
-    background: mintcream url("../img/icon-cross.svg") no-repeat;
+    top: 4px;
+    background: $dark-grey url("../img/icon-cross.svg") no-repeat;
   }
 }
 

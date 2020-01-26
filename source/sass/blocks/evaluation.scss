@@ -83,15 +83,15 @@
 }
 
 .evaluation__radio:disabled ~ .evaluation__label {
-  color: rgba($color: #666666, $alpha: 0.3);
+  color: $dark-grey;
 
   &::before {
-    background-color: rgba($color: #666666, $alpha: 0.3);
-    border-color: rgba($color: #666666, $alpha: 0.3);
+    background-color: $dark-grey;
+    border-color: $dark-grey;
   }
 
   &::after {
-    background-color: rgba($color: #666666, $alpha: 0.3);
+    background-color: white;
   }
 }
 
