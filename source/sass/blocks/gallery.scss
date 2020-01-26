@@ -140,7 +140,7 @@
   width: 100%;
   height: 201px;
 
-  background: url("../../img/video-mobile@1x.jpg") no-repeat;
+  background: sandybrown url("../../img/video-mobile@1x.jpg") no-repeat;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -223,18 +223,15 @@
   }
 }
 
-.gallery-video__button path,
-.gallery-video__button polygon {
+.gallery-video__button svg {
   fill: $controls-quiet;
 }
 
-.gallery-video__button:hover path,
-.gallery-video__button:hover polygon {
+.gallery-video__button:hover svg {
   fill: $black-shaft;
 }
 
-.gallery-video__button:active path,
-.gallery-video__button:active polygon {
+.gallery-video__button:active svg {
   fill: rgba($color: $black-shaft, $alpha: 0.3);
 }
 
@@ -364,18 +361,15 @@
     background-color: rgba($color: #000000, $alpha: 0);
   }
 
-  .gallery-video__button path,
-  .gallery-video__button polygon {
+  .gallery-video__button svg{
     fill: white;
   }
 
-  .gallery-video__button:hover path,
-  .gallery-video__button:hover polygon {
+  .gallery-video__button:hover svg {
     fill: rgba($color: white, $alpha: 0.6);
   }
 
-  .gallery-video__button:active path,
-  .gallery-video__button:active polygon {
+  .gallery-video__button:active svg {
     fill: rgba($color: white, $alpha: 0.3);
   }
 

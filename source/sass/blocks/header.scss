@@ -23,6 +23,10 @@
   top: 17px;
 }
 
+.page-header__button-cross {
+  fill: white;
+}
+
 .main-nav__item a {
   display: block;
 
@@ -79,7 +83,7 @@
   width: 320px;
   height: 388px;
 
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat left -224px top -1px;
+  background: sandybrown url("../img/bg-back-mobile@1x.jpg") no-repeat left -224px top -1px;
   padding-top: 5px;
   position: relative;
 
@@ -149,7 +153,7 @@
   padding: 0;
   position: absolute;
   right: 20px;
-  top: 13px;
+  top: 15px;
 }
 
 /*TODO*/
