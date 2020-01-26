@@ -29,11 +29,21 @@
   padding-left: 22px;
 
   &::placeholder {
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.44;
+    text-align: left;
+  }
+
+  &:-ms-input-placeholder {
     color: black;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     font-weight: bold;
     line-height: 1.44;
+    text-align: left;
   }
 }
 
@@ -54,8 +64,7 @@
       width: 58px;
       height: 58px;
 
-      background: url("../../img/icon-phone.svg") no-repeat 50% 50%;
-      background-color: $dark-grey;
+      background: $dark-grey url("../../img/icon-phone.svg") no-repeat 50% 50%;
       content: "";
       left: 242px;
       position: absolute;
@@ -70,8 +79,7 @@
       width: 58px;
       height: 58px;
 
-      background: url("../../img/icon-mail.svg") no-repeat 50% 50%;
-      background-color: $dark-grey;
+      background: $dark-grey url("../../img/icon-mail.svg") no-repeat 50% 50%;
       content: "";
       left: 242px;
       position: absolute;
